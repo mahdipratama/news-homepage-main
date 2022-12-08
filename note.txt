@@ -1,0 +1,9 @@
+1) how to make a hamburger menu with css ? 
+
+2) how to hide the navigation bar within the hamburger ? 
+
+3) which to implement first ? a hamburger or a navigation ?
+
+4) when its click (hamburger) the navbar appears from the left and the hamburger turn into X. 
+
+5) click the X ham, will close the navbar
