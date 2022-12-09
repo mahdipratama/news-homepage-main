@@ -1,0 +1,93 @@
+@use '../utilities/breakpoints' as *;
+
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgb(38, 38, 38, 0.6);
+  z-index: 2;
+}
+
+.overlay.active {
+  display: block;
+}
+
+.nav {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--off-white);
+  padding: 10px;
+
+  &__menu {
+    display: none;
+    flex-direction: column;
+    background-color: var(--off-white);
+
+    & .nav__list {
+      margin: 1rem;
+    }
+  }
+
+  & .hamburger,
+  & .close-hamburger {
+    cursor: pointer;
+  }
+
+  & .hamburger.active {
+    display: none;
+  }
+
+  & .close-hamburger {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    display: none;
+    transition: ease-in 0.3s;
+  }
+
+  & .close-hamburger.active {
+    display: block;
+    z-index: 2;
+  }
+
+  & .nav__menu.active {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 80%;
+    height: 100vh;
+    text-align: left;
+    padding: 40% 5%;
+    margin: 0;
+    z-index: 2;
+  }
+}
+
+@include breakpoint-up(medium) {
+  .nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &__menu {
+      display: flex;
+      flex-direction: row;
+      background-color: transparent;
+      gap: 30px;
+      font-size: 18px;
+      margin: 0;
+    }
+
+    & .hamburger,
+    & .close-hamburger {
+      display: none;
+      cursor: pointer;
+    }
+  }
+}
