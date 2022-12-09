@@ -1,4 +1,4 @@
-@use '../utilities/breakpoints' as *;
+@use '../utilities' as *;
 
 .overlay {
   display: none;
@@ -21,17 +21,7 @@
   align-items: center;
   justify-content: space-between;
   background-color: var(--off-white);
-  padding: 10px;
-
-  &__menu {
-    display: none;
-    flex-direction: column;
-    background-color: var(--off-white);
-
-    & .nav__list {
-      margin: 1rem;
-    }
-  }
+  padding: rem(10) rem(20);
 
   & .hamburger,
   & .close-hamburger {
@@ -57,15 +47,27 @@
 
   & .nav__menu.active {
     display: block;
+  }
+}
+
+@include breakpoint-down(small) {
+  .nav__menu {
+    display: none;
+    background-color: var(--off-white);
     position: absolute;
     top: 0;
     right: 0;
-    width: 80%;
+    width: 70%;
     height: 100vh;
     text-align: left;
-    padding: 40% 5%;
+    padding-top: rem(130);
+    padding-left: rem(16);
     margin: 0;
     z-index: 2;
+
+    & .nav__list {
+      margin: rem(20);
+    }
   }
 }
 
@@ -76,12 +78,12 @@
     justify-content: space-between;
 
     &__menu {
-      display: flex;
-      flex-direction: row;
+      display: inline-flex;
       background-color: transparent;
-      gap: 30px;
-      font-size: 18px;
+      gap: rem(20);
+      font-size: 15px;
       margin: 0;
+      padding: 0;
     }
 
     & .hamburger,

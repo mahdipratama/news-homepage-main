@@ -13,7 +13,7 @@ html {
 
 body {
   margin: 0;
-  padding: 0;
+  padding: rem(20);
   font-family: var(--main-font);
   background-color: var(--off-white);
   font-size: rem(15);

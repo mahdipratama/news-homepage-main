@@ -1,0 +1,9 @@
+@use '../utilities' as *;
+
+.headline {
+  margin-top: rem(50);
+
+  &__img {
+    width: 100%;
+  }
+}
