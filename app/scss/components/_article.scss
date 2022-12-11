@@ -1,0 +1,47 @@
+@use '../utilities' as *;
+
+.article {
+  display: flex;
+  flex-direction: column;
+  gap: rem(30);
+
+  &__main {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: rem(20);
+  }
+
+  &__picture {
+    flex: 40% 0 0;
+
+    & img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__desc {
+    & span {
+      display: block;
+      font-size: rem(32);
+      font-weight: 800;
+      color: var(--grayish-blue);
+      margin-bottom: rem(18);
+    }
+
+    a {
+      color: var(--dark-blue);
+
+      :hover {
+        color: var(--soft-red);
+      }
+
+      & h4 {
+        font-size: rem(18);
+        margin-bottom: rem(18);
+      }
+    }
+  }
+}

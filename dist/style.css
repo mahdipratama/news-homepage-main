@@ -39,7 +39,8 @@ header {
 
 h1,
 h2,
-h3 {
+h3,
+h4 {
   font-weight: 700;
   line-height: 1.1;
   margin-top: 0;
@@ -211,4 +212,42 @@ ul li {
 }
 .aside__article:not(:last-child) p {
   margin-bottom: 2.125rem;
+}
+
+.article {
+  display: flex;
+  flex-direction: column;
+  gap: 1.875rem;
+}
+.article__main {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1.25rem;
+}
+.article__picture {
+  flex: 40% 0 0;
+}
+.article__picture img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.article__desc span {
+  display: block;
+  font-size: 2rem;
+  font-weight: 800;
+  color: var(--grayish-blue);
+  margin-bottom: 1.125rem;
+}
+.article__desc a {
+  color: var(--dark-blue);
+}
+.article__desc a :hover {
+  color: var(--soft-red);
+}
+.article__desc a h4 {
+  font-size: 1.125rem;
+  margin-bottom: 1.125rem;
 }/*# sourceMappingURL=style.css.map */
