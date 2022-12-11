@@ -6,4 +6,31 @@
   &__img {
     width: 100%;
   }
+
+  & h1 {
+    font-size: rem(40);
+    font-weight: 800;
+    margin-bottom: rem(22);
+  }
+
+  & p {
+    margin-bottom: rem(26);
+  }
+
+  &__button {
+    display: inline-block;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: rem(5);
+    padding: rem(17) rem(30);
+    margin-bottom: rem(60);
+    color: var(--off-white);
+    background-color: var(--soft-red);
+    transition: 0.1s ease-in;
+
+    &:hover {
+      background-color: var(--dark-blue);
+      color: var(--off-white);
+    }
+  }
 }

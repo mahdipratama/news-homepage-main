@@ -9,13 +9,15 @@ h3 {
 
 p {
   margin-top: 0;
+  color: var(--grayish-blue-drk);
+  line-height: 1.6;
 }
 
 a,
 a:visited,
 a:active {
   text-decoration: none;
-  color: #000;
+  // color: #000;
 }
 
 ul li {

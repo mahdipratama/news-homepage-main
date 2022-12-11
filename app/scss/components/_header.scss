@@ -27,8 +27,12 @@
     max-width: rem(51);
   }
 
-  &__link:hover {
-    color: var(--soft-red);
+  &__link {
+    color: var(--dark-blue);
+
+    &:hover {
+      color: var(--soft-red);
+    }
   }
 
   & .hamburger,
