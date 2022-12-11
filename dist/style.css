@@ -84,6 +84,12 @@ ul li {
   background-color: var(--off-white);
   padding: 0.625rem 1.25rem;
 }
+.nav .logo img {
+  max-width: 3.1875rem;
+}
+.nav__link:hover {
+  color: var(--soft-red);
+}
 .nav .hamburger, .nav .close-hamburger {
   cursor: pointer;
 }

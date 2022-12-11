@@ -23,6 +23,14 @@
   background-color: var(--off-white);
   padding: rem(10) rem(20);
 
+  & .logo img {
+    max-width: rem(51);
+  }
+
+  &__link:hover {
+    color: var(--soft-red);
+  }
+
   & .hamburger,
   & .close-hamburger {
     cursor: pointer;
