@@ -19,6 +19,10 @@ body {
   font-size: rem(15);
 
   @include breakpoint-up(medium) {
-    padding: 10px 50px;
+    padding: rem(10) rem(50);
+  }
+
+  @include breakpoint-up(large) {
+    padding: rem(55) rem(150) rem(110);
   }
 }

@@ -1,10 +1,19 @@
 @use '../utilities/' as *;
 
-@include breakpoint-down(small) {
-  header {
+header {
+  @include breakpoint-down(small) {
     position: fixed;
     left: 0;
     right: 0;
     top: 0;
+  }
+}
+
+main {
+  @include breakpoint-up(large) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: rem(30);
+    row-gap: rem(70);
   }
 }

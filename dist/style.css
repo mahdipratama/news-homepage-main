@@ -18,7 +18,12 @@ body {
 }
 @media (min-width: 43.75rem) {
   body {
-    padding: 10px 50px;
+    padding: 0.625rem 3.125rem;
+  }
+}
+@media (min-width: 62.5rem) {
+  body {
+    padding: 3.4375rem 9.375rem 6.875rem;
   }
 }
 
@@ -43,6 +48,17 @@ body {
     top: 0;
   }
 }
+
+@media (min-width: 62.5rem) {
+  main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    -moz-column-gap: 1.875rem;
+         column-gap: 1.875rem;
+    row-gap: 4.375rem;
+  }
+}
+
 h1,
 h2,
 h3,
@@ -146,10 +162,10 @@ ul li {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 1.875rem 0;
+    padding: 2.8125rem 0;
   }
   .nav .logo img {
-    max-width: 3.75rem;
+    max-width: 4.375rem;
   }
   .nav__menu {
     display: inline-flex;
@@ -165,11 +181,6 @@ ul li {
 }
 .headline {
   margin-top: 3.125rem;
-}
-@media (min-width: 43.75rem) {
-  .headline {
-    margin-top: 0;
-  }
 }
 .headline__img {
   width: 100%;
@@ -196,6 +207,31 @@ ul li {
 .headline__button:hover {
   background-color: var(--dark-blue);
   color: var(--off-white);
+}
+@media (min-width: 43.75rem) {
+  .headline {
+    margin-top: 0;
+  }
+}
+@media (min-width: 62.5rem) {
+  .headline {
+    grid-column: span 2;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.875rem;
+  }
+  .headline__picture {
+    grid-column: 1/3;
+  }
+  .headline__article {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .headline__button {
+    margin-top: auto;
+    margin-bottom: 0;
+  }
 }
 
 .aside {
@@ -226,6 +262,15 @@ ul li {
 }
 .aside__article:not(:last-child) p {
   margin-bottom: 2.125rem;
+}
+@media (min-width: 62.5rem) {
+  .aside {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    grid-column: 3/4;
+    margin-bottom: 0;
+  }
 }
 
 .article {
@@ -263,4 +308,38 @@ ul li {
 .article__desc a h4 {
   font-size: 1.125rem;
   margin-bottom: 1.125rem;
+}
+@media (min-width: 62.5rem) {
+  .article {
+    grid-column: span 3;
+    display: grid;
+    grid-template-columns: inherit;
+  }
+  .article__main {
+    gap: 20px;
+    align-items: center;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .article__picture {
+    flex: 1;
+    width: 50%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
+.article__desc {
+  flex: 2;
+}
+.article__desc span {
+  margin-bottom: 1rem;
+}
+.article__desc a h4 {
+  margin-bottom: 1rem;
+}
+@media (min-width: 84.75rem) {
+  .article__main {
+    flex-direction: row;
+    align-items: center;
+  }
 }/*# sourceMappingURL=style.css.map */

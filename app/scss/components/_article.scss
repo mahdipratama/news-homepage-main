@@ -43,4 +43,49 @@
       }
     }
   }
+
+  @include breakpoint-up(large) {
+    grid-column: span 3;
+
+    display: grid;
+    grid-template-columns: inherit;
+    // gap: rem(16);
+
+    &__main {
+      // max-width: 400px;
+      // height: 130px;
+      gap: 20px;
+      align-items: center;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    &__picture {
+      flex: 1;
+      width: 50%;
+      object-fit: cover;
+    }
+  }
+
+  &__desc {
+    flex: 2;
+
+    span {
+      margin-bottom: rem(16);
+    }
+
+    a h4 {
+      margin-bottom: rem(16);
+    }
+  }
+
+  @include breakpoint-up(x-large) {
+    &__main {
+      // max-width: 400px;
+      // height: 130px;
+
+      flex-direction: row;
+      align-items: center;
+    }
+  }
 }

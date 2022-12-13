@@ -36,4 +36,12 @@
       margin-bottom: rem(34);
     }
   }
+
+  @include breakpoint-up(large) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    grid-column: 3 / 4;
+    margin-bottom: 0;
+  }
 }
