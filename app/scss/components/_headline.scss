@@ -3,6 +3,10 @@
 .headline {
   margin-top: rem(50);
 
+  @include breakpoint-up(medium) {
+    margin-top: 0;
+  }
+
   &__img {
     width: 100%;
   }

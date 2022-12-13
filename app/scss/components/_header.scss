@@ -21,7 +21,7 @@
   align-items: center;
   justify-content: space-between;
   background-color: var(--off-white);
-  padding: rem(10) rem(20);
+  padding: rem(15) rem(20);
 
   & .logo img {
     max-width: rem(51);
@@ -88,12 +88,16 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: rem(30) 0;
+
+    & .logo img {
+      max-width: rem(60);
+    }
 
     &__menu {
       display: inline-flex;
-      background-color: transparent;
-      gap: rem(20);
-      font-size: 15px;
+      gap: rem(35);
+      font-size: rem(15);
       margin: 0;
       padding: 0;
     }

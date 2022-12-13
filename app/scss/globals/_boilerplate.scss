@@ -17,4 +17,8 @@ body {
   font-family: var(--main-font);
   background-color: var(--off-white);
   font-size: rem(15);
+
+  @include breakpoint-up(medium) {
+    padding: 10px 50px;
+  }
 }

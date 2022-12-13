@@ -16,6 +16,11 @@ body {
   background-color: var(--off-white);
   font-size: 0.9375rem;
 }
+@media (min-width: 43.75rem) {
+  body {
+    padding: 10px 50px;
+  }
+}
 
 :root {
   --soft-orange: hsl(35, 77%, 62%);
@@ -30,13 +35,14 @@ body {
   --main-font: "Inter", sans-serif;
 }
 
-header {
-  position: fixed;
-  left: 0;
-  right: 0;
-  top: 0;
+@media (max-width: 43.6875rem) {
+  header {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+  }
 }
-
 h1,
 h2,
 h3,
@@ -84,7 +90,7 @@ ul li {
   align-items: center;
   justify-content: space-between;
   background-color: var(--off-white);
-  padding: 0.625rem 1.25rem;
+  padding: 0.9375rem 1.25rem;
 }
 .nav .logo img {
   max-width: 3.1875rem;
@@ -140,12 +146,15 @@ ul li {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 1.875rem 0;
+  }
+  .nav .logo img {
+    max-width: 3.75rem;
   }
   .nav__menu {
     display: inline-flex;
-    background-color: transparent;
-    gap: 1.25rem;
-    font-size: 15px;
+    gap: 2.1875rem;
+    font-size: 0.9375rem;
     margin: 0;
     padding: 0;
   }
@@ -156,6 +165,11 @@ ul li {
 }
 .headline {
   margin-top: 3.125rem;
+}
+@media (min-width: 43.75rem) {
+  .headline {
+    margin-top: 0;
+  }
 }
 .headline__img {
   width: 100%;
