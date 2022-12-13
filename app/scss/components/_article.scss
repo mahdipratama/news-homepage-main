@@ -7,9 +7,8 @@
 
   &__main {
     display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    gap: rem(20);
+    gap: rem(30);
+    max-width: rem(450);
   }
 
   &__picture {

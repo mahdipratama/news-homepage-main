@@ -221,9 +221,8 @@ ul li {
 }
 .article__main {
   display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  gap: 1.25rem;
+  gap: 1.875rem;
+  max-width: 28.125rem;
 }
 .article__picture {
   flex: 40% 0 0;
